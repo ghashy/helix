@@ -390,6 +390,10 @@ impl Prompt {
     pub fn exit_selection(&mut self) {
         self.selection = None;
     }
+
+    pub fn prompt(&self) -> &str {
+        self.prompt.as_ref()
+    }
 }
 
 const BASE_WIDTH: u16 = 30;
